@@ -1,0 +1,52 @@
+SISTEMA PARA GERAÇÃO AUTOMÁTICA DE PROVAS
+
+- Sistema para um cliente professor
+
+- Sistema formulação de provas, aplicação e correção
+
+- Sistema para gerar e corrigir as provas automaticamente
+
+- O sistema deve gerar a prova com um número determinado de questões (o usuário esolherá quantas fáceis, médias e difíceis)
+
+- A correção deve ser realizada por um leitor óptico (gabarito)
+
+- A geração das provas deve ser personalizada (disciplina por exemplo)
+
+- O sistema deve retornar quantas questões acertou e quantas errou
+
+- As perguntas irão ser cadastradas no sistema (poderá ser cadastradas como fácil, média ou difícil, isso será altaredo automaticamente pelo sistema posteriormente, mas não pelo usuário) e serão sorteadas
+
+- A pontuação terá um sistema de peso (fácil, médio ou difícil) para cada questão ter um peso
+
+- O próprio sistema identificará se a questão é fácil, média ou difícil de acordo com o histórico de acertos que ela possui
+
+- O sistema irá classificar se a questão é fácil, média ou difícil à medida que respostas forem computadas (mais de 20)
+	30% de acertos -> fácil
+	entre 30% e 70% de acertos -> média
+	mais de 70% de acertos -> fácil
+Esse cálculo é refeito toda vez que é reaplicado as provas
+
+- As questões deverão ser abertas ou fechadas (o sitema corrigirá só as fechadas)
+
+- Se errar uma questão pode perder ponto
+
+- Usuário: somente o professor
+
+- Deve-se armazenar os históricos das provas já aplicadas/geradas com data, qual prova foi aplicada e em qual turma
+
+- As questões deverão ser organizadas por tema na hora de cadastrar
+
+- Os temas também deverão ser cadastradas
+
+- O sistema deve ser protegido por usuário e senha (controle de acessos)
+
+- As perguntas estarão sujeitas à alteração, exclusão, inclusão e visualização (a dificuldade da questão só é alterada pelo sistema)
+
+- Formulação das provas: quantas questões desejadas (quantidade de abertas e fechadas) e seus níveis de dificuldades de cada uma
+
+- O sistema deverá calcular o valor de cada questão automaticamente à partir do quanto vale a prova, do total de questões informado e de quantas são fáceis, médias e difíces (de acordo com peso)
+Informar o total de pontos da prova
+Informar o total de questões por dificuldade (fácil, média ou difícil)
+Informar a porcentagem que cada nível de questão assumirá na pontuação da prova (Ex.> fáceis com 30% da pontuação, médias com 40% da pontuação e difíceis com 30% da pontuação)
+
+- Número de alternativas fixo, cinco questões com uma correta apenas
